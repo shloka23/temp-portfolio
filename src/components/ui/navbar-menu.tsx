@@ -54,8 +54,7 @@ export const NavbarMenu = () => {
     { name: "About", link: "#about" },
     { name: "Skills", link: "#skills" },
     { name: "Projects", link: "#projects" },
-    { name: "Education", link: "#education" },
-    { name: "Certifications", link: "#certifications" },
+    { name: "Education&Experience", link: "#education" },
     { name: "Contact", link: "#contact" },
   ];
 
@@ -105,7 +104,7 @@ export const NavbarMenu = () => {
               "z-50"
             )}
           >
-            Devika
+            Shloka
           </Link>
 
           {/* Desktop Menu */}

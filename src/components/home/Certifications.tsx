@@ -10,32 +10,16 @@ const certifications = [
     title: "Core Java Programming Course",
     subtitle: "Rooman Technologies",
     date: "Aug 2020",
-    link: "https://www.linkedin.com/in/devika-shendkar/details/certifications/1706639397962/single-media-viewer/?profileId=ACoAAC3gUkoB0KAkIkd9-g8wEOW2BdP8zE-zVyk"
+    link: ""
   },
-  {
-    title: "REST APIs with Spring and Java Skill Path",
-    subtitle: "Codecademy",
-    date: "Apr 2024",
-    link: "https://www.codecademy.com/profiles/digital2389255491/certificates/60f1edf0ac9368001c6025c4"
-  },
-  {
-    title: "J.P. Morgan - Software Engineering Job Simulation",
-    subtitle: "Forage",
-    date: "Feb 2024",
-    link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/J.P.%20Morgan/R5iK7HMxJGBgaSbvk_J.P.%20Morgan_HJHgEHLjtF3KBfAnM_1708033826214_completion_certificate.pdf"
-  },
+  
   {
     title: "Android Developer Course",
     subtitle: "Udemy",
     date: "May 2020",
     link: "UC-cf67ca0c-e646-45f4-82a0-d1631149fe04"
   },
-  {
-    title: "Winner - Smart India Hackathon 2019",
-    subtitle: "Govt Of India",
-    date: "Mar 2019",
-    link: "https://www.linkedin.com/in/devika-shendkar/details/certifications/1706639458616/single-media-viewer/?profileId=ACoAAC3gUkoB0KAkIkd9-g8wEOW2BdP8zE-zVyk"
-  },
+ 
 ];
 
 export default function Certifications() {

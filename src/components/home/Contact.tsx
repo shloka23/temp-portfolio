@@ -6,7 +6,7 @@ import { CardHoverEffect } from '../ui/card-hover-effect';
 import { useTheme } from 'next-themes';
 
 export default function Contact() {
-  const email = "devikashendkar7@gmail.com";
+  const email = "shlokapandya5@gmail.com";
   const { theme } = useTheme();
   const isDark = theme === 'dark';
 

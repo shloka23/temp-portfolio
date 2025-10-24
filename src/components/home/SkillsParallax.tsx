@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { FaJava, FaJs, FaPython, FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaAngular, FaAws, FaGitAlt, FaDocker, FaJira, FaConfluence, FaSwift } from "react-icons/fa";
-import { SiTypescript, SiCplusplus, SiSpringboot, SiNextdotjs, SiExpress, SiTailwindcss, SiMysql, SiMongodb, SiPostgresql, SiFirebase, SiGooglecloud, SiKubernetes, SiJenkins, SiPostman } from "react-icons/si";
+import { FaJava, FaJs, FaPython, FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaAngular, FaAws, FaGitAlt, FaDocker, FaJira, FaConfluence, FaSwift, FaLaravel, FaPhp, FaVuejs } from "react-icons/fa";
+import { SiTypescript, SiCplusplus, SiSpringboot, SiNextdotjs, SiExpress, SiTailwindcss, SiMysql, SiMongodb, SiPostgresql, SiFirebase, SiGooglecloud, SiKubernetes, SiJenkins, SiPostman, SiGraphql, SiKotlin, SiReactivex, SiFastapi, SiMicrosoftazure } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { useTheme } from "next-themes";
 
@@ -13,29 +13,35 @@ const skills = {
     { title: "C++", icon: SiCplusplus, color: "#00599C" },
     { title: "TypeScript", icon: SiTypescript, color: "#3178C6" },
     { title: "JavaScript", icon: FaJs, color: "#F7DF1E" },
-    { title: "Swift", icon: FaSwift, color: "#E34F26" },
+    { title: "PHP", icon: FaPhp, color: "#E34F26" },
     { title: "Java", icon: FaJava, color: "#007396" },
   ],
   row2: [
-    { title: "TailwindCSS", icon: SiTailwindcss, color: "#06B6D4" },
+    { title: "Laravel", icon: SiSpringboot, color: "#DD0031" },
+    { title: "Vue.js", icon: FaVuejs, color: "#339933" },
+    { title: "Spring Boot", icon: SiSpringboot, color: "#6DB33F" },
     { title: "React", icon: FaReact, color: "#61DAFB" },
+    { title: "TailwindCSS", icon: SiTailwindcss, color: "#06B6D4" },
     { title: "Node.js", icon: FaNodeJs, color: "#339933" },
     { title: "Next.js", icon: SiNextdotjs, color: "#000000", darkColor: "#FFFFFF" },
-    { title: "Express", icon: SiExpress, color: "#000000", darkColor: "#FFFFFF" },
-    { title: "Angular", icon: FaAngular, color: "#DD0031" },
-    { title: "Spring Boot", icon: SiSpringboot, color: "#6DB33F" },
+    { title: "Kotlin", icon: SiKotlin, color: "#06B6D4" },
+    { title: "React Native", icon: SiReactivex, color: "#DD0031" },
+    { title: "Express", icon: SiExpress, color: "#040404ff", darkColor: "#FFFFFF" },
+    { title: "FastAPI", icon: SiFastapi, color: "#F7DF1E" },
+
   ],
   row3: [
     { title: "Git", icon: FaGitAlt, color: "#F05032" },
-    { title: "GCP", icon: SiGooglecloud, color: "#4285F4" },
     { title: "AWS", icon: FaAws, color: "#FF9900" },
-    { title: "Firebase", icon: SiFirebase, color: "#FFCA28" },
+    { title: "Azure", icon: SiMicrosoftazure, color: "#61DAFB" },
     { title: "MySQL", icon: SiMysql, color: "#4479A1" },
     { title: "MongoDB", icon: SiMongodb, color: "#47A248" },
     { title: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
+    { title: "GraphDB", icon: SiGraphql, color: "#4169E1" },
+
+
   ],
   row4: [
-    { title: "Confluence", icon: FaConfluence, color: "#172B4D" },
     { title: "REST API", icon: TbApi, color: "#009688" },
     { title: "JIRA", icon: FaJira, color: "#0052CC" },
     { title: "Postman", icon: SiPostman, color: "#FF6C37" },

@@ -87,7 +87,7 @@ export default function About() {
                 >
                   <Image
                     loader={imageLoader}
-                    src="images/devika2.png"
+                    src="images/shloka2.png"
                     alt="Profile"
                     fill
                     className="object-cover"
@@ -115,7 +115,7 @@ export default function About() {
                 animate={{ y: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                Devika
+                Shloka
               </motion.h2>
               <motion.h2 
                 className="text-5xl md:text-7xl font-bold text-zinc-900 dark:text-white flex items-center gap-4"
@@ -123,7 +123,7 @@ export default function About() {
                 animate={{ y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
               >
-                Shendkar
+                Pandya
                 <motion.div 
                   className="inline-flex items-center justify-center bg-violet-600 text-white px-4 py-2 rounded-full"
                   animate={{ 
@@ -156,17 +156,17 @@ export default function About() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              I&apos;m a passionate software developer with a Master&apos;s degree 
-              in Computer Science from Syracuse University and experience specializing 
-              in Full-Stack and Mobile Application Development. I am dedicated to 
-              building scalable and user-friendly applications. 
+              I am a Software Engineer pursuing a Masters in Software Engineering with 3 years of professional experience in full-stack development, cloud computing, and performance optimization. I am proficient in Java, Python, and JavaScript, and have hands-on experience with AWS and Azure.
+              I am passionate about building scalable, cloud-based applications and driving best practices in software development.
             </motion.p>
 
+            <div className="flex flex-col sm:flex-row sm:items-center sm:gap-4 gap-4 mt-4">
+            {/* Get in Touch Button */}
             <motion.a
               href="#contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 px-8 py-4 rounded-full text-lg font-medium hover:bg-zinc-800 dark:hover:bg-zinc-100 transition-colors duration-200 shadow-lg hover:shadow-xl"
+              className="inline-flex items-center justify-center gap-2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 px-8 py-4 rounded-full text-lg font-medium hover:bg-zinc-800 dark:hover:bg-zinc-100 transition-colors duration-200 shadow-lg hover:shadow-xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
@@ -179,6 +179,28 @@ export default function About() {
                 →
               </motion.span>
             </motion.a>
+
+            {/* Resume Button */}
+            <motion.a
+              href="https://docs.google.com/document/d/1EhRXDlQOG9VlzarT4QLmOW3qkdZW7yfFA0ex6zCDEu8/edit?tab=t.0" // 🔗 replace with your actual resume link (Google Drive, PDF, etc.)
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-flex items-center justify-center gap-2 bg-violet-600 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-violet-700 transition-colors duration-200 shadow-lg hover:shadow-xl"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.7 }}
+            >
+              View Resume
+              <motion.span
+                animate={{ x: [0, 5, 0] }}
+                transition={{ duration: 1.5, repeat: Infinity }}
+              >
+                📄
+              </motion.span>
+            </motion.a>
+            </div>
           </motion.div>
         </div>
       </div>

@@ -29,10 +29,10 @@ export default function Home() {
         <EducationSection />
       </section>
       
-      <section className="relative bg-white dark:bg-neutral-950 w-full">
+      {/* <section className="relative bg-white dark:bg-neutral-950 w-full">
         <Certifications />
       </section>
-      
+       */}
       <section className="relative bg-neutral-50 dark:bg-black w-full">
         <Contact />
       </section>

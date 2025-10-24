@@ -4,8 +4,8 @@ import React from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import { cn } from "../../utils/cn";
 import { CardHoverEffect } from "../ui/card-hover-effect";
-import { education } from "../../lib/metadata";
-import { FaGraduationCap } from "react-icons/fa6";
+import { timeline, education } from "../../lib/metadata";
+import { FaGraduationCap, FaBriefcase } from "react-icons/fa6";
 
 interface Education {
   title: string;
@@ -14,8 +14,10 @@ interface Education {
   date: string;
 }
 
-const educationIcons = [FaGraduationCap];
-
+const educationIcons = {
+  education: FaGraduationCap,
+  experience: FaBriefcase,
+};
 export default function EducationSection() {
   const ref = React.useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -40,10 +42,10 @@ export default function EducationSection() {
           className="text-center mb-8"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-900 dark:text-white mb-3 sm:mb-4">
-            Education
+            Education and Experience
           </h2>
           <p className="text-sm sm:text-base text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto mb-8">
-            My academic background
+            My academic background and experience
           </p>
         </motion.div>
 
@@ -58,7 +60,7 @@ export default function EducationSection() {
           </motion.div>
 
           <div className="relative">
-            {education.map((edu: Education, idx: number) => (
+              {timeline.map((item, idx) => (
               <div key={idx} className="relative mb-12 sm:mb-24 last:mb-0">
                 <motion.div
                   initial={{ opacity: 0, x: idx % 2 === 0 ? -20 : 20 }}
@@ -73,7 +75,7 @@ export default function EducationSection() {
                       : "sm:left-[51%] sm:pl-4"
                   )}
                 >
-                  {edu.date}
+                  {item.date}
                 </motion.div>
 
                 <div className="hidden sm:block absolute left-1/2 -translate-x-1/2 -translate-y-[0.5px] top-0">
@@ -92,9 +94,10 @@ export default function EducationSection() {
                       viewport={{ once: true }}
                       className="relative w-7 h-7 flex items-center justify-center"
                     >
-                      {React.createElement(educationIcons[idx % educationIcons.length], {
-                        className: "w-6 h-6 text-purple-500",
-                      })}
+                    {React.createElement(
+                      item.type === "education" ? educationIcons.education : educationIcons.experience,
+                      { className: "w-6 h-6 text-purple-500" }
+                    )}                    
                     </motion.div>
                   </div>
                 </div>
@@ -118,13 +121,13 @@ export default function EducationSection() {
                   <CardHoverEffect>
                     <div className="p-4 sm:p-6">
                       <h3 className="text-base sm:text-lg font-semibold text-neutral-900 dark:text-white mb-2">
-                        {edu.title}
+                        {item.title}
                       </h3>
 
                       <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 mb-3 sm:mb-4">
-                        <span className="font-medium">{edu.institution}</span>
+                        <span className="font-medium">{item.institution}</span>
                         <span className="hidden sm:inline">•</span>
-                        <span>{edu.location}</span>
+                        <span>{item.location}</span>
                       </div>
                     </div>
                   </CardHoverEffect>
