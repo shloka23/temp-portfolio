@@ -22,14 +22,14 @@ export const metadata: Metadata = {
   ...generateMetadata('/'),
   icons: {
     icon: [
-      { url: `${basePath}/favicon.svg`, type: 'image/svg+xml' },
-      { url: `${basePath}/favicon.svg`, type: 'image/svg+xml', sizes: 'any' }
+      { url: `${basePath}/briefcase.svg`, type: 'image/svg+xml' },
+      { url: `${basePath}/briefcase.svg`, type: 'image/svg+xml', sizes: 'any' }
     ],
-    shortcut: `${basePath}/favicon.svg`,
-    apple: `${basePath}/favicon.svg`,
+    shortcut: `${basePath}/briefcase.svg`,
+    apple: `${basePath}/briefcase.svg`,
     other: {
       rel: 'mask-icon',
-      url: `${basePath}/favicon.svg`,
+      url: `${basePath}/briefcase.svg`,
       color: '#8B5CF6'
     }
   }
@@ -51,10 +51,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
-        <link rel="icon" type="image/svg+xml" href={`${basePath}/favicon.svg`} />
-        <link rel="shortcut icon" type="image/svg+xml" href={`${basePath}/favicon.svg`} />
-        <link rel="apple-touch-icon" href={`${basePath}/favicon.svg`} />
-        <link rel="mask-icon" href={`${basePath}/favicon.svg`} color="#8B5CF6" />
+        <link rel="icon" type="image/svg+xml" href={`${basePath}/briefcase.svg`} />
+        <link rel="shortcut icon" type="image/svg+xml" href={`${basePath}/briefcase.svg`} />
+        <link rel="apple-touch-icon" href={`${basePath}/briefcase.svg`} />
+        <link rel="mask-icon" href={`${basePath}/briefcase.svg`} color="#8B5CF6" />
         <Script id="viewport-fix" strategy="beforeInteractive">{`
           function setViewportHeight() {
             let vh = window.innerHeight * 0.01;
