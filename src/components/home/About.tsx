@@ -156,8 +156,8 @@ export default function About() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              I am a Software Engineer pursuing a Masters in Software Engineering with 3 years of professional experience in full-stack development, cloud computing, and performance optimization. I am proficient in Java, Python, and JavaScript, and have hands-on experience with AWS and Azure.
-              I am passionate about building scalable, cloud-based applications and driving best practices in software development.
+              I am a Software Engineer pursuing a Masters in Software Engineering with 3 years of professional experience in full-stack development, cloud computing, and performance optimization. I am proficient in Java, PHP, Javascript, Python, C++ and have hands-on experience with AWS and Azure.
+              I am passionate about building scalable, AI-powered cloud-based applications following best practices in software development.
             </motion.p>
 
             <div className="flex flex-col sm:flex-row sm:items-center sm:gap-4 gap-4 mt-4">
